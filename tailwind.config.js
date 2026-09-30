@@ -1,0 +1,16 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html','./src/**/*.{ts,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        aaroh: { ink:'#171715', sand:'#D8C9AF', ivory:'#F6F1E8', gold:'#B58A4D', olive:'#66705B' }
+      },
+      fontFamily: {
+        display:['"Playfair Display"','serif'],
+        sans:['"DM Sans"','sans-serif']
+      }
+    }
+  },
+  plugins: []
+};
