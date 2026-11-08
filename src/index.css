@@ -1,1 +1,50 @@
-@tailwind base;@tailwind components;@tailwind utilities;html{scroll-behavior:smooth}body{margin:0;background:#f6f1e8;color:#171715;font-family:"DM Sans",sans-serif}.eyebrow{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:#17171599}a{text-decoration:none}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f8f5ed;
+  color: #1f1f1f;
+  font-family: Jost, system-ui, sans-serif;
+}
+
+img {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@layer components {
+  .page {
+    @apply mx-auto w-full max-w-page px-4 sm:px-8;
+  }
+  .eyebrow {
+    @apply text-xs uppercase tracking-[0.3em] text-aaroh-gold;
+  }
+  .h2 {
+    @apply m-0 font-display text-[40px] font-normal leading-none sm:text-[52px];
+  }
+  .btn {
+    @apply inline-flex min-h-[44px] items-center justify-center px-8 py-4 text-[13px] uppercase tracking-[0.22em] transition-colors;
+  }
+  .btn-dark {
+    @apply btn bg-aaroh-ink text-aaroh-ground hover:bg-black;
+  }
+  .btn-outline {
+    @apply btn border border-aaroh-ink hover:bg-aaroh-ink hover:text-aaroh-ground;
+  }
+  .link-underline {
+    @apply border-b border-aaroh-ink pb-1 text-[13px] uppercase tracking-[0.2em] hover:text-aaroh-gold;
+  }
+  .icon-btn {
+    @apply inline-flex h-11 w-11 items-center justify-center bg-transparent text-aaroh-ink hover:text-aaroh-gold;
+  }
+}
